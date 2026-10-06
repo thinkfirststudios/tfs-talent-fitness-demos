@@ -382,3 +382,17 @@ main, header, footer { position: relative; z-index: 1; }
 .book-grid .thumb:hover, .book-grid .thumb:focus-visible { border-color: var(--vermilion); position: relative; z-index: 1; }
 a.panel { text-decoration: none; color: inherit; display: block; }
 @media print { .site-footer { background: #fff !important; } }
+
+/* ---------- Stock placeholders (labelled: stock, not Wren Castellane) ---------- */
+.frame.has-img, .digi.has-img { position: relative; overflow: hidden; padding: 0; }
+.frame.has-img img, .digi.has-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(.12) saturate(.88) contrast(.96) brightness(1.03); }
+.frame.has-img.mono img { filter: grayscale(1) contrast(1.05); }
+.digi.has-img img { filter: none; }
+.stock-tag { position: absolute; left: 0; right: 0; top: 0; z-index: 3; background: rgba(21, 17, 15, .82); color: var(--warm-white); font-family: var(--f-mono); font-size: 11px; letter-spacing: .04em; padding: 4px 8px; text-align: center; line-height: 1.4; pointer-events: none; }
+.digi.has-img .stock-tag { font-size: 10px; padding: 3px 4px; }
+.digi.has-img .digi-cap { position: absolute; left: 6px; bottom: 6px; z-index: 3; background: #F2F2EF; color: #2E2E2A; font-family: var(--f-mono); font-size: 11px; padding: 2px 6px; }
+.panel.dark .frame.has-img { height: auto; }
+.comp-media .frame.has-img .cap, .comp-media .cap { z-index: 4; }
+.lb-stage .frame.has-img { aspect-ratio: 3 / 4; }
+.lb-stage .frame.has-img.r45 { aspect-ratio: 4 / 5; }
+.lb-stage .frame.has-img.r169 { aspect-ratio: 16 / 9; }

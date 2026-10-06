@@ -708,3 +708,12 @@ legend { padding: 0 6px; font-weight: 700; }
 .tcard .frame-inner { place-items: start center; padding-top: 20px; }
 .tcard .frame .frame-label { transform: none; }
 @media (max-width: 719px) { .tcard .tname { font-size: 16px; } .tcard .tstats { font-size: 14px; } .tcard .frame-label { font-size: 11px; } }
+
+/* ---------- Stock placeholders in person frames (labelled: stock, not a represented model) ---------- */
+.frame.has-img { padding: 0; border-style: solid; }
+.frame.has-img img, .pol.has-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(.22) saturate(.86) contrast(1.06) brightness(.96); }
+.stock-tag { position: absolute; left: 0; right: 0; top: 0; z-index: 3; background: rgba(22, 15, 12, .86); color: var(--putty); font-family: var(--f-data); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: 5px 8px; text-align: center; line-height: 1.35; pointer-events: none; }
+.gallery-main .frame.has-img .frame-label { position: absolute; left: 10px; right: 10px; bottom: 10px; z-index: 3; max-width: none; background: rgba(22, 15, 12, .82); color: var(--oyster); padding: 6px 8px; }
+.pol.has-img { position: relative; overflow: hidden; padding: 0; }
+.pol.has-img img { filter: none; }
+.pol.has-img .stock-tag { font-size: 10px; padding: 3px 4px; letter-spacing: .06em; }

@@ -81,7 +81,15 @@
       current = (i + list.length) % list.length;
       var t = list[current];
       var ratio = t.dataset.ratio || "";
-      stage.innerHTML = '<div class="frame ' + ratio + '" role="img" aria-label="Model photo placeholder"><span class="frame-label">[MODEL PHOTO — client to supply, with signed release and photographer licence]</span></div>';
+      var srcImg = t.querySelector("img");
+      stage.innerHTML = srcImg
+        ? '<div class="frame ' + ratio + ' has-img"></div>'
+        : '<div class="frame ' + ratio + '" role="img" aria-label="Model photo placeholder"><span class="frame-label">[MODEL PHOTO — client to supply, with signed release and photographer licence]</span></div>';
+      if (srcImg) {
+        var big = srcImg.cloneNode(); big.removeAttribute("loading"); big.removeAttribute("srcset"); big.src = srcImg.currentSrc || srcImg.src;
+        stage.firstChild.appendChild(big);
+        stage.firstChild.insertAdjacentHTML("beforeend", '<span class="stock-tag">Stock image — not Wren Castellane</span>');
+      }
       capT.textContent = t.dataset.title || "";
       capC.textContent = "PH. [CREDIT — CONFIRM]";
       capN.textContent = "[" + String(current + 1).padStart(2, "0") + "] / [" + String(list.length).padStart(2, "0") + "]";
