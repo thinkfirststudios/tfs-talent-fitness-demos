@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<!-- TALENT PATH. Glacier accent only — no Signal Fuchsia on this page.
+     B1/B2: no fee, price, payment field, package or upsell anywhere. The form ends at SUBMIT.
+     The fee-policy block is a counsel-supplied slot; TFS does not write that copy. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Submissions — Fieldmark Talent Group — DEMO</title>
+<meta name="description" content="DEMO TEMPLATE — fictional talent agency submissions page. ThinkFirst Studios.">
+<!--@HEADLINKS-->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!--/@HEADLINKS-->
+</head>
+<body class="light-page path-talent">
+<!--@HEADER compact-->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header is-condensed" data-compact>
+  <div class="wrap">
+    <a class="wordmark" href="index.html" aria-label="Fieldmark Talent Group, home">Fieldmark</a>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-div" href="roster.html?division=women">Women</a>
+      <a class="nav-div" href="roster.html?division=men">Men</a>
+      <a class="nav-div" href="roster.html?division=curve">Curve</a>
+      <a class="nav-div" href="roster.html?division=talent">Talent</a>
+      <a href="contact.html#client-enquiry">Clients</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a class="nav-submit" href="submissions.html" aria-current="page">Submit</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="grp-client">
+    <h2 class="micro">Book talent</h2>
+    <a href="roster.html?division=women">Women</a>
+    <a href="roster.html?division=men">Men</a>
+    <a href="roster.html?division=curve">Curve</a>
+    <a href="roster.html?division=talent">Talent</a>
+    <a href="roster.html">Full roster</a>
+    <a href="contact.html#client-enquiry">Client enquiry</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="grp-talent">
+    <h2 class="micro">Join the roster</h2>
+    <a href="submissions.html">Submit to Fieldmark</a>
+    <a href="submissions.html#requirements">What to send</a>
+  </div>
+</div>
+<!--/@HEADER-->
+<main id="main" class="light">
+  <section class="page-head band-talent" aria-labelledby="sub-title">
+    <div class="wrap">
+      <p class="micro">For talent — join the roster</p>
+      <h1 id="sub-title" class="display">Submissions</h1>
+      <p class="lede">[PLACEHOLDER: one procedural sentence — how submissions work at the agency. Client to supply]</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="looking-title" style="padding-top:56px">
+    <div class="wrap two-col">
+      <div data-reveal>
+        <h2 id="looking-title" class="h-sub">What we're looking for</h2>
+        <p style="margin-top:12px">[PLACEHOLDER: client to supply — divisions currently reviewing, general requirements. Procedural only.]</p>
+      </div>
+      <div id="requirements" data-reveal>
+        <h2 class="h-sub">What to send</h2>
+        <ol class="legal" style="padding-left:22px;margin-top:12px">
+          <li><strong>Digitals.</strong> [PLACEHOLDER: plain, unedited photos — specified framing (head &amp; shoulders, full length, profile), natural light, no filters]</li>
+          <li><strong>Stats.</strong> [PLACEHOLDER: which measurements, in which units]</li>
+          <li><strong>Contact.</strong> [PLACEHOLDER: email and phone; Instagram optional]</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section raised" aria-labelledby="form-title" style="padding-top:56px">
+    <div class="wrap">
+      <h2 id="form-title" class="h-section" style="margin-bottom:8px">Submit</h2>
+
+      <div class="fee-policy" role="note" aria-labelledby="fee-h-top">
+        <h3 id="fee-h-top">[FEE POLICY — CONFIRM WITH CLIENT'S COUNSEL]</h3>
+        <p>[PLACEHOLDER — supplied by counsel]</p>
+      </div>
+
+      <form class="form" id="submission-form">
+        <div class="row2">
+          <div class="field"><label for="sf-name">Full name</label><input id="sf-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="sf-email">Email</label><input id="sf-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="sf-phone">Phone</label><input id="sf-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="sf-city">City</label><input id="sf-city" name="city" autocomplete="address-level2" required></div>
+        </div>
+        <div class="field"><label for="sf-ig">Instagram <span class="hint">(optional)</span></label><input id="sf-ig" name="instagram" placeholder="@"></div>
+
+        <fieldset>
+          <legend>Stats</legend>
+          <div class="row4">
+            <div class="field"><label for="sf-height">Height</label><input id="sf-height" name="height" placeholder="ft / in"></div>
+            <div class="field"><label for="sf-bust">Bust / chest</label><input id="sf-bust" name="bust"></div>
+            <div class="field"><label for="sf-waist">Waist</label><input id="sf-waist" name="waist"></div>
+            <div class="field"><label for="sf-hips">Hips</label><input id="sf-hips" name="hips"></div>
+            <div class="field"><label for="sf-dress">Dress / suit</label><input id="sf-dress" name="dress"></div>
+            <div class="field"><label for="sf-shoe">Shoe</label><input id="sf-shoe" name="shoe"></div>
+            <div class="field"><label for="sf-hair">Hair</label><input id="sf-hair" name="hair"></div>
+            <div class="field"><label for="sf-eyes">Eyes</label><input id="sf-eyes" name="eyes"></div>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="sf-photos">Photos (4–6 files)</label>
+          <span class="hint" id="sf-photos-hint">JPG or PNG, up to [8 MB — CONFIRM] each. Unedited digitals only.</span>
+          <input id="sf-photos" name="photos" type="file" accept="image/jpeg,image/png" multiple required aria-describedby="sf-photos-hint sf-photos-error">
+          <span class="form-error" id="sf-photos-error" aria-live="polite"></span>
+        </div>
+
+        <fieldset>
+          <legend>Age and consent</legend>
+          <div class="field">
+            <label for="sf-dob">Date of birth</label>
+            <input id="sf-dob" name="dob" type="date" required aria-describedby="sf-dob-error">
+            <span class="form-error" id="sf-dob-error" aria-live="polite"></span>
+          </div>
+          <label class="check"><input type="checkbox" name="age18" required><span>I confirm I am 18 years of age or older.</span></label>
+          <label class="check"><input type="checkbox" name="ownImages" required><span>I own these images or have permission to submit them.</span></label>
+          <label class="check"><input type="checkbox" name="readPrivacy" required><span>I have read <a href="privacy.html#submissions">how Fieldmark stores and uses submissions</a>.</span></label>
+          <p style="margin:0"><span class="confirm">[CONFIRM WORDING WITH COUNSEL]</span></p>
+        </fieldset>
+
+        <!-- B1: fee-policy slot directly above the submit button -->
+        <div class="fee-policy compact" role="note" aria-labelledby="fee-h-submit">
+          <h3 id="fee-h-submit">[FEE POLICY — CONFIRM WITH CLIENT'S COUNSEL]</h3>
+          <p>[PLACEHOLDER: the agency's fee statement, supplied and approved by their counsel — do not write this copy]</p>
+        </div>
+
+        <div><button class="btn btn-talent" type="submit">Submit</button></div>
+        <p class="form-msg" tabindex="-1" role="status">DEMO — this form is not connected. [CLIENT TO SUPPLY: form handler, upload storage and retention — see privacy policy, L7]</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="next-title" style="padding-top:56px">
+    <div class="wrap two-col">
+      <div data-reveal>
+        <h2 id="next-title" class="h-sub">What happens next</h2>
+        <p style="margin-top:12px">[PLACEHOLDER: realistic reply window — client to supply]</p>
+      </div>
+      <div data-reveal>
+        <h2 class="h-sub">Under 18?</h2>
+        <p style="margin-top:12px">[PLACEHOLDER — if the agency accepts submissions from under-18s, that is a separate guarded path with guardian consent. Not built in this demo. See L3.]</p>
+      </div>
+    </div>
+  </section>
+</main>
+<!--@FOOTER-->
+<footer class="site-footer">
+  <div class="wrap">
+    <h2 class="micro" style="margin-bottom:20px">Agency directory</h2>
+    <div class="dir">
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Head of Bookings</span><a href="mailto:bookings@example.com">[email — CONFIRM]</a></div>
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Women &amp; Curve Boards</span><a href="mailto:women@example.com">[email — CONFIRM]</a></div>
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Men &amp; Talent Boards</span><a href="mailto:men@example.com">[email — CONFIRM]</a></div>
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Submissions</span><a href="mailto:submissions@example.com">[email — CONFIRM]</a></div>
+    </div>
+    <div class="foot-cols">
+      <div>
+        <p class="wordmark foot-word">Fieldmark</p>
+        <p>[Street address — CONFIRM]<br>[Los Angeles, CA — CONFIRM]</p>
+        <p class="data">[TALENT AGENCY LICENCE NO. — CONFIRM]</p>
+      </div>
+      <div><h2>Divisions</h2><ul><li><a href="roster.html?division=women">Women</a></li><li><a href="roster.html?division=men">Men</a></li><li><a href="roster.html?division=curve">Curve</a></li><li><a href="roster.html?division=talent">Talent</a></li></ul></div>
+      <div><h2>Agency</h2><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="submissions.html">Submissions</a></li><li><a href="https://instagram.com/" rel="noopener">Instagram [@handle — CONFIRM]</a></li></ul></div>
+      <div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy (draft)</a></li><li><a href="privacy.html#terms">Terms (draft)</a></li></ul></div>
+    </div>
+    <div class="foot-legal"><span>© [YEAR] Fieldmark Talent Group — fictional demo agency</span><span>Website demo by ThinkFirst Studios</span></div>
+  </div>
+</footer>
+
+<div class="demo-chip" role="note">DEMO — ThinkFirst Studios · [Your name here]</div>
+<script src="script.js" defer></script>
+<!--/@FOOTER-->
+</body>
+</html>

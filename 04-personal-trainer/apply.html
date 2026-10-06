@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Apply for a consultation — Vantrell Strength — DEMO</title>
+<meta name="description" content="DEMO TEMPLATE — fictional coach application. Reviewed, not checkout.">
+<!--@HEADLINKS-->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600&family=Lexend:wght@300;400;500&family=Petrona:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!--/@HEADLINKS-->
+</head>
+<body class="light-page">
+<!-- Submits to [FORM ENDPOINT — CONFIRM]. No payment, no account. Health panel is a counsel-supplied slot: no questionnaire fields drafted by TFS. -->
+<!--@HEADER compact-->
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-strip" role="note"><span class="demo-pill">DEMO — ThinkFirst Studios · [Your name here]</span></div>
+<header class="site-header is-condensed" data-compact="">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Vantrell Strength</a>
+    <nav class="nav" aria-label="Primary"><a href="coaching.html">Coaching</a><a href="about.html">About</a><a href="apply.html" aria-current="page">Apply</a><a href="contact.html">Contact</a></nav>
+    <a class="btn btn-ghost header-cta" href="apply.html">Apply</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+</header>
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-top"><span class="wordmark">Vantrell Strength</span><button class="btn btn-ghost menu-close" type="button">Close</button></div>
+  <nav aria-label="Mobile"><a href="coaching.html">Coaching</a><a href="about.html">About</a><a href="apply.html">Apply</a><a href="contact.html">Contact</a></nav>
+  <a class="btn btn-primary" href="apply.html">Apply for a consultation</a>
+</div>
+<!--/@HEADER-->
+<main id="main">
+  <section class="page-head" aria-labelledby="ap-h">
+    <div class="wrap">
+      <span class="label">Application</span>
+      <h1 id="ap-h" class="display" style="margin-top:12px">Apply for a consultation</h1>
+      <p style="max-width:62ch;margin-top:18px;font-size:18px">This is read by <span class="ph">[Theo]</span>. Replies take <span class="ph">[0] days</span>. Not every application is taken on. The consultation is free, and it's a conversation about fit — not a sales call. <span class="ph">[CONFIRM]</span></p>
+    </div>
+  </section>
+  <div class="wrap apply-layout" style="padding-top:28px">
+    <div>
+      <p class="label" id="apply-progress" aria-live="polite">Section 1 of 4</p>
+      <div class="rail" aria-hidden="true"><span></span></div>
+      <form class="form" id="apply-form" action="#form-endpoint-confirm" method="post">
+        <fieldset>
+          <legend>1 · You</legend>
+          <div class="row2">
+            <div class="field"><label for="ap-name">Name</label><input id="ap-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="ap-email">Email</label><input id="ap-email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="ap-phone">Phone</label><input id="ap-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field"><label for="ap-city">City</label><input id="ap-city" name="city" autocomplete="address-level2" required></div>
+          </div>
+          <button class="btn btn-fir continue" type="button">Continue</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>2 · What you're after</legend>
+          <div class="field"><label for="ap-tier">Which tier interests you?</label>
+            <select id="ap-tier" name="tier"><option value="">Not sure yet</option><option value="in-person">In-person</option><option value="hybrid">Hybrid</option><option value="online">Online</option></select></div>
+          <div class="field"><label for="ap-goal">What would you like to work on?</label>
+            <span class="hint" id="ap-goal-hint">Tell us about your goals, what you enjoy, and your availability. Please don't include body measurements or weight.</span>
+            <textarea id="ap-goal" name="goal" aria-describedby="ap-goal-hint" required></textarea></div>
+          <div class="field"><span class="q" id="hist-l">Training history</span>
+            <div class="radio-row" role="radiogroup" aria-labelledby="hist-l">
+              <label><input type="radio" name="history" value="new" required> New</label>
+              <label><input type="radio" name="history" value="returning"> Returning after a break</label>
+              <label><input type="radio" name="history" value="regular"> Training regularly</label>
+              <label><input type="radio" name="history" value="other"> [Other]</label>
+            </div></div>
+          <button class="btn btn-fir continue" type="button">Continue</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>3 · Logistics</legend>
+          <div class="field"><span class="q">Availability</span>
+            <div style="overflow-x:auto">
+              <table class="avail">
+                <caption class="sr-only">Tick the times you could train</caption>
+                <thead><tr><th scope="col"><span class="sr-only">Time</span></th><th scope="col">Mon</th><th scope="col">Tue</th><th scope="col">Wed</th><th scope="col">Thu</th><th scope="col">Fri</th><th scope="col">Sat</th><th scope="col">Sun</th></tr></thead>
+                <tbody>
+                  <!--@AVAIL-->
+<tr><th scope="row">Early (before 9)</th><td><label><input type="checkbox" name="avail" value="mon-early"><span class="sr-only">Mon Early (before 9)</span></label></td><td><label><input type="checkbox" name="avail" value="tue-early"><span class="sr-only">Tue Early (before 9)</span></label></td><td><label><input type="checkbox" name="avail" value="wed-early"><span class="sr-only">Wed Early (before 9)</span></label></td><td><label><input type="checkbox" name="avail" value="thu-early"><span class="sr-only">Thu Early (before 9)</span></label></td><td><label><input type="checkbox" name="avail" value="fri-early"><span class="sr-only">Fri Early (before 9)</span></label></td><td><label><input type="checkbox" name="avail" value="sat-early"><span class="sr-only">Sat Early (before 9)</span></label></td><td><label><input type="checkbox" name="avail" value="sun-early"><span class="sr-only">Sun Early (before 9)</span></label></td></tr>
+<tr><th scope="row">Midday</th><td><label><input type="checkbox" name="avail" value="mon-midday"><span class="sr-only">Mon Midday</span></label></td><td><label><input type="checkbox" name="avail" value="tue-midday"><span class="sr-only">Tue Midday</span></label></td><td><label><input type="checkbox" name="avail" value="wed-midday"><span class="sr-only">Wed Midday</span></label></td><td><label><input type="checkbox" name="avail" value="thu-midday"><span class="sr-only">Thu Midday</span></label></td><td><label><input type="checkbox" name="avail" value="fri-midday"><span class="sr-only">Fri Midday</span></label></td><td><label><input type="checkbox" name="avail" value="sat-midday"><span class="sr-only">Sat Midday</span></label></td><td><label><input type="checkbox" name="avail" value="sun-midday"><span class="sr-only">Sun Midday</span></label></td></tr>
+<tr><th scope="row">Evening (after 5)</th><td><label><input type="checkbox" name="avail" value="mon-evening"><span class="sr-only">Mon Evening (after 5)</span></label></td><td><label><input type="checkbox" name="avail" value="tue-evening"><span class="sr-only">Tue Evening (after 5)</span></label></td><td><label><input type="checkbox" name="avail" value="wed-evening"><span class="sr-only">Wed Evening (after 5)</span></label></td><td><label><input type="checkbox" name="avail" value="thu-evening"><span class="sr-only">Thu Evening (after 5)</span></label></td><td><label><input type="checkbox" name="avail" value="fri-evening"><span class="sr-only">Fri Evening (after 5)</span></label></td><td><label><input type="checkbox" name="avail" value="sat-evening"><span class="sr-only">Sat Evening (after 5)</span></label></td><td><label><input type="checkbox" name="avail" value="sun-evening"><span class="sr-only">Sun Evening (after 5)</span></label></td></tr>
+<!--/@AVAIL-->
+                </tbody>
+              </table>
+            </div></div>
+          <div class="row2">
+            <div class="field"><label for="ap-where">Preferred location</label><select id="ap-where" name="where"><option>In person — [studio / gym — CONFIRM]</option><option>Remote</option><option>Either</option></select></div>
+            <div class="field"><label for="ap-start">When would you like to start?</label><select id="ap-start" name="start"><option>[CONFIRM options]</option><option>[Option — CONFIRM]</option><option>[Option — CONFIRM]</option></select></div>
+          </div>
+          <div class="field"><label for="ap-budget">Budget range</label><select id="ap-budget" name="budget"><option>$[XXX]–$[XXX] / month</option><option>$[XXX]–$[XXX] / month</option><option>$[XXX]+ / month</option><option>Prefer to discuss</option></select></div>
+          <button class="btn btn-fir continue" type="button">Continue</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>4 · Health and consent</legend>
+          <div class="waiver" role="note">
+            <strong>[LIABILITY WAIVER / PAR-Q — CLIENT'S COUNSEL TO SUPPLY]</strong>
+            <div class="lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <p class="hint" style="margin:0">Health questions are not drafted by the web studio. This panel is a slot for the coach's counsel-approved wording.</p>
+          </div>
+          <label class="check"><input type="checkbox" name="waiver" required><span>I have read and agree to the waiver <span class="ph">[CONFIRM WORDING]</span></span></label>
+          <label class="check"><input type="checkbox" name="contact" required><span><span class="ph">[Consent to be contacted — CONFIRM WORDING]</span></span></label>
+          <div><button class="btn btn-fir" type="submit">Send application</button></div>
+        </fieldset>
+      </form>
+      <div class="success" id="apply-success" tabindex="-1" role="status">
+        <h2 class="display" style="font-size:40px;margin-bottom:10px">Application received</h2>
+        <p>[PLACEHOLDER: what happens next — who reads it and how you'll hear back. CONFIRM]</p>
+      </div>
+    </div>
+    <aside class="after" aria-labelledby="after-h">
+      <h2 id="after-h">What happens after you apply</h2>
+      <ol>
+        <li>[PLACEHOLDER: application is read — CONFIRM]</li>
+        <li>[PLACEHOLDER: reply within <span class="ph">[0] days</span> — CONFIRM]</li>
+        <li>[PLACEHOLDER: free consultation, if it looks like a fit — CONFIRM]</li>
+      </ol>
+    </aside>
+  </div>
+</main>
+<!--@FOOTER-->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <p class="wordmark" style="margin:0 0 8px">Vantrell Strength</p>
+        <p><span class="ph">[City, CA]</span><br><a href="mailto:hello@example.com"><span class="ph">[email — CONFIRM]</span></a><br><span class="ph">[phone — CONFIRM]</span></p>
+        <div class="social" aria-label="Social links (placeholders)">
+          <a href="#" aria-label="Instagram [CONFIRM handle]"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/></svg></a>
+          <a href="#" aria-label="Video channel [CONFIRM]"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></a>
+        </div>
+      </div>
+      <div><h2>Site</h2><ul><li><a href="coaching.html">Coaching</a></li><li><a href="about.html">About</a></li><li><a href="apply.html">Apply</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy (draft)</a></li><li><a href="privacy.html#terms">Terms (draft)</a></li><li><a href="apply.html">[Waiver / PAR-Q — CONFIRM]</a></li><li><a href="coaching.html#terms">[Refund and cancellation terms — CONFIRM]</a></li></ul></div>
+    </div>
+    <p class="scope-line">[Training and coaching only. Medical, injury and nutrition questions are referred to a licensed professional — CONFIRM WORDING]</p>
+    <div class="foot-base"><span>© [20XX] Vantrell Strength — fictional demo practice</span><span>DEMO — ThinkFirst Studios · [Your name here]</span></div>
+  </div>
+</footer>
+<div class="apply-bar"><a class="btn btn-primary" href="apply.html">Apply for a consultation</a></div>
+<script src="script.js" defer></script>
+<!--/@FOOTER-->
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Roster — Fieldmark Talent Group — DEMO</title>
+<meta name="description" content="DEMO TEMPLATE — fictional talent agency roster. ThinkFirst Studios.">
+<!--@HEADLINKS-->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!--/@HEADLINKS-->
+</head>
+<body class="page-roster">
+<!--@HEADER compact-->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header is-condensed" data-compact>
+  <div class="wrap">
+    <a class="wordmark" href="index.html" aria-label="Fieldmark Talent Group, home">Fieldmark</a>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-div" href="roster.html?division=women">Women</a>
+      <a class="nav-div" href="roster.html?division=men">Men</a>
+      <a class="nav-div" href="roster.html?division=curve">Curve</a>
+      <a class="nav-div" href="roster.html?division=talent">Talent</a>
+      <a href="contact.html#client-enquiry">Clients</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a class="nav-submit" href="submissions.html">Submit</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="grp-client">
+    <h2 class="micro">Book talent</h2>
+    <a href="roster.html?division=women">Women</a>
+    <a href="roster.html?division=men">Men</a>
+    <a href="roster.html?division=curve">Curve</a>
+    <a href="roster.html?division=talent">Talent</a>
+    <a href="roster.html" aria-current="page">Full roster</a>
+    <a href="contact.html#client-enquiry">Client enquiry</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="grp-talent">
+    <h2 class="micro">Join the roster</h2>
+    <a href="submissions.html">Submit to Fieldmark</a>
+    <a href="submissions.html#requirements">What to send</a>
+  </div>
+</div>
+<!--/@HEADER-->
+<main id="main">
+  <section class="page-head dark" aria-labelledby="roster-title" style="padding-bottom:24px">
+    <div class="wrap">
+      <p class="micro">For clients — the board</p>
+      <h1 id="roster-title" class="display">Roster</h1>
+    </div>
+  </section>
+
+  <div class="filterbar" role="region" aria-label="Filter the roster">
+    <div class="wrap">
+      <div class="filter-row">
+        <div class="pills" role="group" aria-label="Division">
+          <button class="pill" type="button" data-division="all" aria-pressed="true">All</button>
+          <button class="pill" type="button" data-division="women" aria-pressed="false">Women</button>
+          <button class="pill" type="button" data-division="men" aria-pressed="false">Men</button>
+          <button class="pill" type="button" data-division="curve" aria-pressed="false">Curve</button>
+          <button class="pill" type="button" data-division="talent" aria-pressed="false">Talent</button>
+        </div>
+        <div class="filter-more">
+          <div class="sel"><label for="f-height">Height</label>
+            <select id="f-height" name="height"><option value="any">Any</option><option value="a">[5'4"–5'7" — CONFIRM]</option><option value="b">[5'8"–5'10" — CONFIRM]</option><option value="c">[5'11"–6'1" — CONFIRM]</option><option value="d">[6'2"+ — CONFIRM]</option></select></div>
+          <div class="sel"><label for="f-hair">Hair</label>
+            <select id="f-hair" name="hair"><option value="any">Any</option><option value="black">[Black — CONFIRM]</option><option value="brown">[Brown — CONFIRM]</option><option value="blonde">[Blonde — CONFIRM]</option><option value="red">[Red — CONFIRM]</option></select></div>
+          <div class="sel"><label for="f-eyes">Eyes</label>
+            <select id="f-eyes" name="eyes"><option value="any">Any</option><option value="brown">[Brown — CONFIRM]</option><option value="blue">[Blue — CONFIRM]</option><option value="green">[Green — CONFIRM]</option><option value="hazel">[Hazel — CONFIRM]</option></select></div>
+          <div class="sel"><label for="f-shoe">Shoe</label>
+            <select id="f-shoe" name="shoe"><option value="any">Any</option><option value="s">[US 6–8 — CONFIRM]</option><option value="m">[US 8.5–10 — CONFIRM]</option><option value="l">[US 10.5+ — CONFIRM]</option></select></div>
+          <div class="sel"><label for="f-loc">Location</label>
+            <select id="f-loc" name="location"><option value="any">Any</option><option value="la">[Los Angeles — CONFIRM]</option><option value="sf">[San Francisco — CONFIRM]</option><option value="sd">[San Diego — CONFIRM]</option></select></div>
+        </div>
+      </div>
+      <div class="filter-meta">
+        <span class="count" id="roster-count" aria-live="polite">[20] ARTISTS</span>
+        <button class="reset" type="button" data-reset>Reset filters</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="dark" aria-label="Artists">
+    <div class="wrap">
+      <!-- Uniform grid on purpose: this page is a tool, not a mood. All names invented adults; every frame is client-supplied. -->
+      <div class="roster-grid" id="roster-grid">
+        <!--@CARDS-->
+<a class="tcard" href="talent.html" data-division="women" data-height="b" data-hair="brown" data-eyes="green" data-shoe="m" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Saskia Venn</span><span class="tdiv">Women</span><span class="tstats">HT [5'10"] · [34-24-35]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="women" data-height="c" data-hair="black" data-eyes="brown" data-shoe="m" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Odile Marchetti-Rowe</span><span class="tdiv">Women</span><span class="tstats">HT [5'11"] · [33-24-34]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="women" data-height="b" data-hair="blonde" data-eyes="blue" data-shoe="m" data-location="sf"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Iolanthe Brask</span><span class="tdiv">Women</span><span class="tstats">HT [5'9"] · [32-24-34]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="women" data-height="b" data-hair="brown" data-eyes="hazel" data-shoe="s" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Marisol Quenby</span><span class="tdiv">Women</span><span class="tstats">HT [5'9"] · [34-25-35]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="women" data-height="c" data-hair="red" data-eyes="green" data-shoe="m" data-location="sd"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Juniper Halvard</span><span class="tdiv">Women</span><span class="tstats">HT [5'11"] · [33-23-34]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="women" data-height="b" data-hair="black" data-eyes="brown" data-shoe="m" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Tamsin Oyelaran</span><span class="tdiv">Women</span><span class="tstats">HT [5'10"] · [32-24-35]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="men" data-height="c" data-hair="brown" data-eyes="blue" data-shoe="l" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Caspian Thorne-Ilse</span><span class="tdiv">Men</span><span class="tstats">HT [6'1"] · [40-31]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="men" data-height="d" data-hair="black" data-eyes="brown" data-shoe="l" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Ruben Askew-Daire</span><span class="tdiv">Men</span><span class="tstats">HT [6'2"] · [40-32]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="men" data-height="c" data-hair="black" data-eyes="brown" data-shoe="l" data-location="sf"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Idris Vallencourt</span><span class="tdiv">Men</span><span class="tstats">HT [6'0"] · [39-31]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="men" data-height="c" data-hair="brown" data-eyes="hazel" data-shoe="l" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Matteo Ferreby</span><span class="tdiv">Men</span><span class="tstats">HT [6'1"] · [40-32]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="men" data-height="d" data-hair="black" data-eyes="brown" data-shoe="l" data-location="sd"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Kofi Lindqvist-Ames</span><span class="tdiv">Men</span><span class="tstats">HT [6'2"] · [41-32]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="curve" data-height="b" data-hair="black" data-eyes="brown" data-shoe="m" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Delphine Okafor-Reyes</span><span class="tdiv">Curve</span><span class="tstats">HT [5'9"] · [42-34-46]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="curve" data-height="b" data-hair="blonde" data-eyes="blue" data-shoe="m" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Wilhelmina Strand</span><span class="tdiv">Curve</span><span class="tstats">HT [5'10"] · [40-33-44]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="curve" data-height="a" data-hair="brown" data-eyes="hazel" data-shoe="s" data-location="sd"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Paloma Ashgrove</span><span class="tdiv">Curve</span><span class="tstats">HT [5'7"] · [41-34-45]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="curve" data-height="b" data-hair="black" data-eyes="brown" data-shoe="m" data-location="sf"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Noor Halloway</span><span class="tdiv">Curve</span><span class="tstats">HT [5'9"] · [42-35-46]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="talent" data-height="c" data-hair="brown" data-eyes="green" data-shoe="l" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Emeric Sayle</span><span class="tdiv">Talent · Acting</span><span class="tstats">HT [6'0"] · [ACTOR]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="talent" data-height="a" data-hair="red" data-eyes="blue" data-shoe="s" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Lark Abernethy</span><span class="tdiv">Talent · Dance</span><span class="tstats">HT [5'6"] · [DANCER]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="talent" data-height="c" data-hair="blonde" data-eyes="blue" data-shoe="l" data-location="sf"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Teodor Vasko</span><span class="tdiv">Talent · Music</span><span class="tstats">HT [5'11"] · [MUSICIAN]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="talent" data-height="a" data-hair="black" data-eyes="brown" data-shoe="s" data-location="la"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Ines Calloway-Zhu</span><span class="tdiv">Talent · Acting</span><span class="tstats">HT [5'5"] · [ACTOR]</span></span></a>
+        <a class="tcard" href="talent.html" data-division="talent" data-height="c" data-hair="brown" data-eyes="hazel" data-shoe="l" data-location="sd"><div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release"><div class="frame-inner"><span class="frame-label">[TALENT PHOTO — client to supply, with signed release. 3:4]</span></div></div><span class="cap"><span class="tname">Rafferty Quill</span><span class="tdiv">Talent · Dance</span><span class="tstats">HT [5'11"] · [DANCER]</span></span></a>
+<!--/@CARDS-->
+      </div>
+      <div class="empty-state" id="roster-empty">
+        <p class="h-sub">[NO ARTISTS MATCH THESE FILTERS]</p>
+        <button class="btn btn-ghost" type="button" data-reset>Reset filters</button>
+      </div>
+      <div class="load-more-wrap" hidden><button class="btn btn-ghost" type="button" id="load-more">Load more</button></div>
+    </div>
+  </section>
+
+  <section class="section band-client" aria-labelledby="r-enq">
+    <div class="wrap">
+      <h2 id="r-enq" class="h-section">Hold or book</h2>
+      <p style="max-width:56ch;margin-top:16px">[PLACEHOLDER: one line on how to request holds and send a brief — client to supply]</p>
+      <a class="btn btn-client" href="contact.html#client-enquiry">Enquire about talent →</a>
+    </div>
+  </section>
+</main>
+<!--@FOOTER-->
+<footer class="site-footer">
+  <div class="wrap">
+    <h2 class="micro" style="margin-bottom:20px">Agency directory</h2>
+    <div class="dir">
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Head of Bookings</span><a href="mailto:bookings@example.com">[email — CONFIRM]</a></div>
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Women &amp; Curve Boards</span><a href="mailto:women@example.com">[email — CONFIRM]</a></div>
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Men &amp; Talent Boards</span><a href="mailto:men@example.com">[email — CONFIRM]</a></div>
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Submissions</span><a href="mailto:submissions@example.com">[email — CONFIRM]</a></div>
+    </div>
+    <div class="foot-cols">
+      <div>
+        <p class="wordmark foot-word">Fieldmark</p>
+        <p>[Street address — CONFIRM]<br>[Los Angeles, CA — CONFIRM]</p>
+        <p class="data">[TALENT AGENCY LICENCE NO. — CONFIRM]</p>
+      </div>
+      <div><h2>Divisions</h2><ul><li><a href="roster.html?division=women">Women</a></li><li><a href="roster.html?division=men">Men</a></li><li><a href="roster.html?division=curve">Curve</a></li><li><a href="roster.html?division=talent">Talent</a></li></ul></div>
+      <div><h2>Agency</h2><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="submissions.html">Submissions</a></li><li><a href="https://instagram.com/" rel="noopener">Instagram [@handle — CONFIRM]</a></li></ul></div>
+      <div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy (draft)</a></li><li><a href="privacy.html#terms">Terms (draft)</a></li></ul></div>
+    </div>
+    <div class="foot-legal"><span>© [YEAR] Fieldmark Talent Group — fictional demo agency</span><span>Website demo by ThinkFirst Studios</span></div>
+  </div>
+</footer>
+
+<div class="demo-chip" role="note">DEMO — ThinkFirst Studios · [Your name here]</div>
+<script src="script.js" defer></script>
+<!--/@FOOTER-->
+</body>
+</html>

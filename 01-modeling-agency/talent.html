@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<!--
+  PATTERN NOTE — talent detail page (one built example).
+  The agency generates one of these per represented artist ([48] in total — CONFIRM):
+    1. Copy this file to talent/<slug>.html (or render from a CMS/collection with the same fields).
+    2. Fields: name, division, stats (height, bust/chest, waist, hips, dress/suit, shoe, hair, eyes),
+       credits[], gallery[] (5–7 edited frames, 3:4), digitals[] (unretouched, 1:1), comp card PDF, digitals PDF.
+    3. Every image requires a signed talent release on file (L4) AND a photographer licence for edited work (L5).
+    4. Stats come from the artist, re-measured on the agency's schedule — never estimated.
+    5. Credits are only published once verified and cleared for publication — otherwise omit the line.
+  Client path only: this page must never carry submission UI.
+-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Saskia Venn — Women — Fieldmark Talent Group — DEMO</title>
+<meta name="description" content="DEMO TEMPLATE — fictional talent profile. ThinkFirst Studios.">
+<!--@HEADLINKS-->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!--/@HEADLINKS-->
+</head>
+<body class="page-talent">
+<!--@HEADER compact-->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header is-condensed" data-compact>
+  <div class="wrap">
+    <a class="wordmark" href="index.html" aria-label="Fieldmark Talent Group, home">Fieldmark</a>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-div" href="roster.html?division=women">Women</a>
+      <a class="nav-div" href="roster.html?division=men">Men</a>
+      <a class="nav-div" href="roster.html?division=curve">Curve</a>
+      <a class="nav-div" href="roster.html?division=talent">Talent</a>
+      <a href="contact.html#client-enquiry">Clients</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a class="nav-submit" href="submissions.html">Submit</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="grp-client">
+    <h2 class="micro">Book talent</h2>
+    <a href="roster.html?division=women">Women</a>
+    <a href="roster.html?division=men">Men</a>
+    <a href="roster.html?division=curve">Curve</a>
+    <a href="roster.html?division=talent">Talent</a>
+    <a href="roster.html">Full roster</a>
+    <a href="contact.html#client-enquiry">Client enquiry</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="grp-talent">
+    <h2 class="micro">Join the roster</h2>
+    <a href="submissions.html">Submit to Fieldmark</a>
+    <a href="submissions.html#requirements">What to send</a>
+  </div>
+</div>
+<!--/@HEADER-->
+<main id="main" class="dark">
+  <div class="page-head" style="padding-bottom:24px"><div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="roster.html">Roster</a> / <a href="roster.html?division=women">Women</a> / <span aria-current="page">Saskia Venn</span></nav>
+  </div></div>
+  <div class="wrap talent-layout">
+    <!-- Digitals gallery: every frame is a labelled empty frame -->
+    <section aria-label="Portfolio frames">
+      <div class="gallery-main">
+        <div class="frame" role="img" aria-label="Talent photo placeholder: client to supply, with signed release">
+          <span class="frame-label" id="gallery-main-label" aria-live="polite">[TALENT PHOTO 1 — client to supply, with signed release]</span>
+        </div>
+      </div>
+      <p class="gallery-pos" id="gallery-pos">FRAME 1 OF 7</p>
+      <div class="strip" role="tablist" aria-label="Choose a frame (use arrow keys)">
+        <button type="button" role="tab" aria-selected="true" aria-label="Frame 1">01</button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Frame 2" tabindex="-1">02</button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Frame 3" tabindex="-1">03</button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Frame 4" tabindex="-1">04</button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Frame 5" tabindex="-1">05</button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Frame 6" tabindex="-1">06</button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Frame 7" tabindex="-1">07</button>
+      </div>
+    </section>
+
+    <section aria-labelledby="talent-name">
+      <p class="micro">Women · [Los Angeles — CONFIRM]</p>
+      <h1 id="talent-name" class="display talent-name">Saskia Venn</h1>
+      <table class="stats-table">
+        <caption class="sr-only">Measurements — all placeholders, confirm with talent</caption>
+        <tbody>
+          <tr><th scope="row">Height</th><td>[5'10"]</td></tr>
+          <tr><th scope="row">Bust</th><td>[34"]</td></tr>
+          <tr><th scope="row">Waist</th><td>[24"]</td></tr>
+          <tr><th scope="row">Hips</th><td>[35"]</td></tr>
+          <tr><th scope="row">Dress</th><td>[US 2]</td></tr>
+          <tr><th scope="row">Shoe</th><td>[US 9]</td></tr>
+          <tr><th scope="row">Hair</th><td>[Brown]</td></tr>
+          <tr><th scope="row">Eyes</th><td>[Green]</td></tr>
+        </tbody>
+      </table>
+      <p class="note"><span class="confirm">[ALL MEASUREMENTS — CONFIRM WITH TALENT]</span></p>
+
+      <h2 class="h-sub" style="margin-top:36px">Credits</h2>
+      <ul class="credits">
+        <li>[CREDIT — CONFIRM]</li>
+        <li>[CREDIT — CONFIRM]</li>
+        <li>[CREDIT — CONFIRM]</li>
+        <li>[CREDIT — CONFIRM]</li>
+      </ul>
+
+      <div class="talent-actions">
+        <a class="btn btn-client" href="contact.html?talent=Saskia%20Venn#client-enquiry">Enquire about Saskia Venn →</a>
+      </div>
+      <div class="downloads">
+        <a class="link-client" href="assets/digitals-placeholder.pdf" download>Download digitals (PDF)</a>
+        <a class="link-client" href="assets/comp-card-placeholder.pdf" download>Download comp card</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Digitals / polaroids: deliberately plainer — no grading, no scrim -->
+  <section class="polaroids" aria-labelledby="pol-title">
+    <div class="wrap">
+      <h2 id="pol-title" class="h-sub">Digitals</h2>
+      <p style="margin:6px 0 0">Unretouched, natural light. [PLACEHOLDER: date taken — CONFIRM]</p>
+      <div class="pol-grid">
+        <div class="pol" role="img" aria-label="Digital placeholder 1">[DIGITAL 01 — client to supply, with signed release]</div>
+        <div class="pol" role="img" aria-label="Digital placeholder 2">[DIGITAL 02 — client to supply, with signed release]</div>
+        <div class="pol" role="img" aria-label="Digital placeholder 3">[DIGITAL 03 — client to supply, with signed release]</div>
+        <div class="pol" role="img" aria-label="Digital placeholder 4">[DIGITAL 04 — client to supply, with signed release]</div>
+        <div class="pol" role="img" aria-label="Digital placeholder 5">[DIGITAL 05 — client to supply, with signed release]</div>
+        <div class="pol" role="img" aria-label="Digital placeholder 6">[DIGITAL 06 — client to supply, with signed release]</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sticky-enquire">
+    <a class="btn btn-client" href="contact.html?talent=Saskia%20Venn#client-enquiry">Enquire about Saskia Venn →</a>
+  </div>
+</main>
+<!--@FOOTER-->
+<footer class="site-footer">
+  <div class="wrap">
+    <h2 class="micro" style="margin-bottom:20px">Agency directory</h2>
+    <div class="dir">
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Head of Bookings</span><a href="mailto:bookings@example.com">[email — CONFIRM]</a></div>
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Women &amp; Curve Boards</span><a href="mailto:women@example.com">[email — CONFIRM]</a></div>
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Men &amp; Talent Boards</span><a href="mailto:men@example.com">[email — CONFIRM]</a></div>
+      <div class="dir-person"><span class="who">[NAME — CONFIRM]</span><span class="role">Submissions</span><a href="mailto:submissions@example.com">[email — CONFIRM]</a></div>
+    </div>
+    <div class="foot-cols">
+      <div>
+        <p class="wordmark foot-word">Fieldmark</p>
+        <p>[Street address — CONFIRM]<br>[Los Angeles, CA — CONFIRM]</p>
+        <p class="data">[TALENT AGENCY LICENCE NO. — CONFIRM]</p>
+      </div>
+      <div><h2>Divisions</h2><ul><li><a href="roster.html?division=women">Women</a></li><li><a href="roster.html?division=men">Men</a></li><li><a href="roster.html?division=curve">Curve</a></li><li><a href="roster.html?division=talent">Talent</a></li></ul></div>
+      <div><h2>Agency</h2><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="submissions.html">Submissions</a></li><li><a href="https://instagram.com/" rel="noopener">Instagram [@handle — CONFIRM]</a></li></ul></div>
+      <div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy (draft)</a></li><li><a href="privacy.html#terms">Terms (draft)</a></li></ul></div>
+    </div>
+    <div class="foot-legal"><span>© [YEAR] Fieldmark Talent Group — fictional demo agency</span><span>Website demo by ThinkFirst Studios</span></div>
+  </div>
+</footer>
+
+<div class="demo-chip" role="note">DEMO — ThinkFirst Studios · [Your name here]</div>
+<script src="script.js" defer></script>
+<!--/@FOOTER-->
+</body>
+</html>

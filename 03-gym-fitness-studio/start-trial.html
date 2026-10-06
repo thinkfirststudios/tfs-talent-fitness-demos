@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Start your free trial week — Ninth &amp; Coil Strength Club — DEMO</title>
+<meta name="description" content="DEMO TEMPLATE — fictional gym trial flow. No card, no account.">
+<!--@HEADLINKS-->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!--/@HEADLINKS-->
+</head>
+<body class="page-light">
+<!-- B2: no card field, no password, no account. B3: waiver panel is a counsel-supplied slot — no wording drafted here. -->
+<!--@HEADER compact-->
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-strip" role="note"><span class="demo-pill">DEMO — ThinkFirst Studios · [Your name here]</span></div>
+<header class="site-header is-condensed" data-compact="">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Ninth <span class="amp">&amp;</span> Coil</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="schedule.html">Schedule</a>
+      <a href="memberships.html">Memberships</a>
+      <a href="about.html#coaches">Coaches</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-trial header-cta" href="start-trial.html">Start your free trial week</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-top"><span class="wordmark" style="color:var(--graphite)">Ninth <span class="amp">&amp;</span> Coil</span><button class="btn btn-outline btn-sm menu-close" type="button">Close</button></div>
+  <nav aria-label="Mobile"><a href="schedule.html">Schedule</a><a href="memberships.html">Memberships</a><a href="about.html#coaches">Coaches</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  <a class="btn btn-trial" href="start-trial.html">Start your free trial week</a>
+</div>
+<!--/@HEADER-->
+<main id="main">
+  <section class="page-head" aria-labelledby="t-h" style="padding-bottom:24px">
+    <div class="wrap">
+      <span class="eyebrow">Free trial</span>
+      <h1 id="t-h" class="display">Start your free trial week</h1>
+    </div>
+  </section>
+  <div class="wrap" style="padding-top:28px;padding-bottom:72px">
+    <ol class="steps" aria-label="Progress">
+      <li class="is-active">Pick a class</li>
+      <li>Health &amp; waiver</li>
+      <li>Your details</li>
+    </ol>
+    <div class="trial-layout">
+      <div>
+        <!-- Submits to [SCHEDULER URL — CONFIRM] or [FORM ENDPOINT — CONFIRM]. Demo: handled client-side only. -->
+        <form id="trial-form" action="#form-endpoint-confirm" method="post">
+          <fieldset class="step is-active" style="margin:0 0 20px">
+            <legend class="sr-only">Step 1: pick a class</legend>
+            <h2>1 · Pick a class</h2>
+            <div class="pick-list" id="pick-list"></div>
+          </fieldset>
+          <fieldset class="step" style="margin:0 0 20px">
+            <legend class="sr-only">Step 2: health and waiver</legend>
+            <h2>2 · Health &amp; waiver</h2>
+            <div class="waiver" role="note">
+              <strong>[LIABILITY WAIVER / PAR-Q — CLIENT'S COUNSEL TO SUPPLY]</strong>
+              <div class="lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <label class="check"><input type="checkbox" id="waiver-ok" name="waiver" required><span>I have read and agree to the waiver <span class="ph">[CONFIRM WORDING]</span></span></label>
+          </fieldset>
+          <fieldset class="step" style="margin:0 0 20px">
+            <legend class="sr-only">Step 3: your details</legend>
+            <h2>3 · Your details</h2>
+            <div class="form">
+              <div class="row2">
+                <div class="field"><label for="tf-name">First name</label><input id="tf-name" name="firstName" autocomplete="given-name" required></div>
+                <div class="field"><label for="tf-email">Email</label><input id="tf-email" name="email" type="email" autocomplete="email" required></div>
+              </div>
+              <div class="row2">
+                <div class="field"><label for="tf-phone">Phone</label><input id="tf-phone" name="phone" type="tel" autocomplete="tel"></div>
+                <div class="field"><label for="tf-heard">How did you hear about us? <span class="hint">(optional)</span></label>
+                  <select id="tf-heard" name="heard"><option value="">Choose…</option><option>Instagram</option><option>A friend</option><option>Walked past</option><option>Search</option><option>Other</option></select></div>
+              </div>
+              <div><button class="btn btn-trial" type="submit">Start your free trial week</button></div>
+              <p><span class="ph">[TRIAL CONVERTS TO PAID? — CONFIRM]</span> — if the trial converts to a paid membership, that disclosure goes here, before submit.</p>
+            </div>
+          </fieldset>
+        </form>
+        <div class="success" id="trial-success" tabindex="-1" role="status">
+          <h2 class="h-sec" style="font-size:44px">You're booked in</h2>
+          <p>[PLACEHOLDER: what happens next — confirmation email, what to bring, when to arrive. CONFIRM]</p>
+          <a class="bare" href="schedule.html">See the schedule <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <aside class="summary" aria-labelledby="sum-h">
+        <h2 id="sum-h">Your trial</h2>
+        <p id="summary-class" aria-live="polite"></p>
+        <h3 style="font-size:16px;margin:16px 0 6px">First visit</h3>
+        <dl class="facts">
+          <div><dt>Parking</dt><dd><span class="ph">[CONFIRM]</span></dd></div>
+          <div><dt>Bring</dt><dd><span class="ph">[CONFIRM]</span></dd></div>
+          <div><dt>Arrive</dt><dd><span class="ph">[00] min early</span></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</main>
+<!--@FOOTER-->
+<footer class="site-footer on-dark">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <p class="wordmark" style="color:#fff">Ninth <span class="amp">&amp;</span> Coil</p>
+        <p><span class="ph">[Street address — CONFIRM]</span><br><span class="ph">[City, CA]</span></p>
+        <p>Hours: <span class="ph">[hours — CONFIRM]</span><br>Staffed: <span class="ph">[STAFFED HOURS — CONFIRM]</span></p>
+        <div class="social" aria-label="Social links (placeholders)">
+          <a href="#" aria-label="Instagram [CONFIRM handle]"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/></svg></a>
+          <a href="#" aria-label="Video channel [CONFIRM]"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></a>
+        </div>
+      </div>
+      <div><h2>Club</h2><ul><li><a href="schedule.html">Schedule</a></li><li><a href="memberships.html">Memberships</a></li><li><a href="about.html#coaches">Coaches</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="start-trial.html">Free trial</a></li></ul></div>
+      <div><h2>At a glance</h2><ul class="glance" data-glance></ul><p style="margin-top:10px;font-size:14px"><a href="schedule.html">Full timetable</a></p></div>
+      <div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy (draft)</a></li><li><a href="privacy.html#terms">Terms (draft)</a></li><li><a href="memberships.html#renewal">[Membership agreement — CONFIRM]</a></li><li><a href="about.html#access">[Accessibility statement — CONFIRM]</a></li></ul></div>
+    </div>
+    <div class="foot-base"><span>© [20XX] Ninth &amp; Coil Strength Club — fictional demo business</span><span>DEMO — ThinkFirst Studios · [Your name here]</span></div>
+  </div>
+</footer>
+<div class="trial-bar" aria-label="Quick actions">
+  <a class="btn btn-trial" href="start-trial.html">Free trial</a>
+  <a class="btn btn-outline" href="tel:+10000000000">Call [000-000-0000]</a>
+</div>
+<script src="script.js" defer></script>
+<!--/@FOOTER-->
+</body>
+</html>
